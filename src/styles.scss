@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+.active {
+  color: white !important;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: red;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 0;
+  &:hover {
+    background: blue;
+    div {
+      display: flex !important;
+      transition: 0.5s all;
+      width: 20vw !important;
+      color: white;
+      font-weight: bold;
+      text-transform: capitalize;
+      z-index: 12000;
+      position: absolute;
+      border-radius: 10px;
+    }
+  }
+}
+.d1 {
+  background-color: blue;
+}
